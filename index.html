@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#174b38">
+  <meta name="description" content="TEMANI - Platform Monitoring dan Pendampingan Terapi Morbus Hansen.">
+
+  <title>TEMANI | Care · Connect · Cure</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+ 
+<header class="navbar">
+
+  <div class="navbar-left">
+
+    <div class="institution-brand">
+
+      <div class="institution-item">
+        <img src="images/logo-ung.jpg"
+             alt="Logo Universitas Negeri Gorontalo">
+        <span>Universitas Negeri Gorontalo</span>
+      </div>
+
+      <div class="institution-item">
+        <img src="images/logo-puskesmas.webp"
+             alt="Logo Puskesmas Sipatana">
+        <span>Puskesmas Sipatana</span>
+      </div>
+
+    </div>
+
+    <a href="#beranda" class="brand">
+      <span>TEMANI</span>
+    </a>
+
+  </div>
+
+  <nav class="nav-links">
+    <a href="#beranda">Beranda</a>
+    <a href="#akses">Akses Platform</a>
+    <a href="#tentang">Tentang</a>
+  </nav>
+
+  <button class="nav-login" onclick="openLogin('pasien')">
+    Masuk →
+  </button>
+
+  <button class="mobile-menu" aria-label="Buka menu">
+    ☰
+  </button>
+
+</header>
+
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <div class="hero-label">
+          CARE · CONNECT · CURE
+        </div>
+
+        <h1>
+          Perjalanan terapi,<br>
+          tidak harus sendiri.
+        </h1>
+
+        
+<p>
+  TEMANI hadir untuk mendukung pasien kusta,
+  keluarga, dan tenaga kesehatan dalam menjalani
+  proses pengobatan dan pemantauan kesehatan
+  secara lebih terarah dan berkelanjutan.
+</p>
+
+
+        <a href="#akses" class="hero-cta">
+          Mulai Perjalanan →
+        </a>
+
+        <div class="hero-caption">
+          Pendampingan terapi yang lebih dekat, setiap hari.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- USER ACCESS -->
+    <section class="access-section" id="akses">
+
+      <div class="access-heading">
+
+        <span class="section-label">AKSES PLATFORM</span>
+
+        <h2>Selamat datang di TEMANI.</h2>
+
+        <p>
+          Silakan pilih akses sesuai peran Anda.
+        </p>
+
+      </div>
+
+
+      <div class="access-grid">
+
+        <!-- PATIENT -->
+        <article class="access-card">
+
+          <div class="access-icon">♡</div>
+
+          <span class="access-number">01 / PASIEN</span>
+
+          <h3>Pasien</h3>
+
+          <p>
+            Pantau jadwal MDT, catat konsumsi obat,
+            dan laporkan keluhan selama pengobatan.
+          </p>
+
+          <button
+            class="access-button"
+            onclick="openLogin('pasien')">
+            Masuk sebagai Pasien
+            <span>→</span>
+          </button>
+
+          <a href="#" class="register-link"
+             onclick="openRegister('pasien'); return false;">
+            Belum punya akun? Daftar
+          </a>
+
+        </article>
+
+
+        <!-- FAMILY -->
+        <article class="access-card">
+
+          <div class="access-icon">♧</div>
+
+          <span class="access-number">02 / KELUARGA</span>
+
+          <h3>Keluarga</h3>
+
+          <p>
+            Bantu mengingatkan jadwal pengobatan,
+            mendampingi kontrol, dan memahami edukasi.
+          </p>
+
+          <button
+            class="access-button"
+            onclick="openLogin('keluarga')">
+            Masuk sebagai Keluarga
+            <span>→</span>
+          </button>
+
+          <a href="#" class="register-link"
+             onclick="openRegister('keluarga'); return false;">
+            Belum punya akun? Daftar
+          </a>
+
+        </article>
+
+
+        <!-- HEALTH STAFF -->
+        <article class="access-card">
+
+          <div class="access-icon">✚</div>
+
+          <span class="access-number">03 / PETUGAS</span>
+
+          <h3>Petugas Puskesmas</h3>
+
+          <p>
+            Monitor perkembangan terapi, riwayat
+            pengobatan, dan tindak lanjut pasien.
+          </p>
+
+          <button
+            class="access-button"
+            onclick="openLogin('petugas')">
+            Masuk sebagai Petugas
+            <span>→</span>
+          </button>
+
+          <span class="staff-note">
+            Akun petugas dibuat oleh administrator.
+          </span>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about-section" id="tentang">
+
+      
+<div class="about-content">
+
+  <span class="section-label">MENGENAL TEMANI</span>
+
+  <h2>
+    Care with purpose.<br>
+    Support with heart.
+  </h2>
+
+  <p>
+    TEMANI (Teknologi Monitoring dan Pendampingan Terapi)
+    merupakan platform digital yang menghubungkan pasien,
+    keluarga, dan tenaga kesehatan untuk mendukung proses
+    pengobatan, pemantauan kesehatan, serta pendampingan
+    secara berkelanjutan.
+  </p>
+
+  <p>
+    Pada tahap awal, TEMANI dikembangkan untuk mendukung
+    pendampingan pasien kusta melalui pemantauan terapi,
+    pengingat jadwal pengobatan, edukasi, dan keterlibatan
+    keluarga.
+  </p>
+
+</div>
+
+
+      <div class="about-visual">
+
+        <div class="about-decoration"></div>
+
+        <div class="about-card">
+
+          <span class="about-symbol">✿</span>
+
+          <h3>Setiap langkah berarti.</h3>
+
+          <p>
+            Karena tidak ada yang harus menjalani
+            perjalanan pengobatan sendirian.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-brand">
+    <strong>TEMANI</strong>
+    <span>CARE · CONNECT · CURE</span>
+  </div>
+
+  <p>
+    Teknologi Monitoring dan Pendampingan Terapi.
+    Mendukung perjalanan pengobatan melalui
+    pemantauan, edukasi, dan pendampingan kesehatan.
+  </p>
+
+  <div class="footer-contact">
+    <h3>Informasi dan Kontak</h3>
+    <p>Puskesmas Sipatana</p>
+    <p>Informasi pelayanan kesehatan dan pendampingan pasien.</p>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 TEMANI. All rights reserved.
+  </div>
+
+</footer>
+
+
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
